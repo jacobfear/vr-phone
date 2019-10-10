@@ -72,49 +72,49 @@ default
             animHolder = "F_selfie01"; //assign a new anim
             llStartAnimation("F_selfie01"); //start the new anim
         }
-        if (msg == "[F]Selfie 02")
+        else if (msg == "[F]Selfie 02")
         {
             llStopAnimation(animHolder);
             animHolder = "F_selfie02";
             llStartAnimation("F_selfie02");
         }
-        if (msg == "[F]Talking")
+        else if (msg == "[F]Talking")
         {
             llStopAnimation(animHolder);
             animHolder = "F_talking01";
             llStartAnimation("F_talking01");
         }
-        if (msg == "[M]Selfie 01")
+        else if (msg == "[M]Selfie 01")
         {
             llStopAnimation(animHolder);
             animHolder = "M_selfie01";
             llStartAnimation("M_selfie01");
         }
-        if (msg == "[Uni]Selfie 01")
+        else if (msg == "[Uni]Selfie 01")
         {
             llStopAnimation(animHolder);
             animHolder = "Uni_selfie01";
             llStartAnimation("Uni_selfie01");
         }
-        if (msg == "[Uni]Selfie 02")
+        else if (msg == "[Uni]Selfie 02")
         {
             llStopAnimation(animHolder);
             animHolder = "Uni_selfie02";
             llStartAnimation("Uni_selfie02");
         }
-        if (msg == "[Uni]Talking")
+        else if (msg == "[Uni]Talking")
         {
             llStopAnimation(animHolder);
             animHolder = "Uni_talking01";
             llStartAnimation("Uni_talking01");
         }
-        if (msg == "Stop")
+        else if (msg == "Stop")
         {
             llStopAnimation(animHolder);
             animHolder = "00";
             llStartAnimation("00");
         }
-        if (msg == "Reset")
+        else if (msg == "Reset")
         {
             llResetScript();//reset script permission
             llOwnerSay("Reset Complete.");
