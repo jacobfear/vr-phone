@@ -42,7 +42,7 @@ default
 
     attach(key id)
     {
-        llStopAnimation("00"); //set animHolder as the default stop animation of the avatar
+        llStopAnimation(animHolder); //set animHolder as the default stop animation of the avatar
     }
 
     //dialogue menu section--------------------------------------------->>>
@@ -116,8 +116,8 @@ default
         }
         else if (msg == "Reset")
         {
+            llOwnerSay("You've reset the scripts of this device.");
             llResetScript();//reset script permission
-            llOwnerSay("Reset Complete.");
         }
 
         // Timer fire immediately, to do clean-up actions
