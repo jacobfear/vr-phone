@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .error{display:none}
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0px;
     background-image: url(imgs/bg.png);
     background-position: center; 
@@ -25,10 +27,12 @@ header, section, footer{
 
 .top-navigation-bar{
     background-color: #a79bc6;
-    display: flex;
-    justify-content: right;
     margin-bottom: 15px;
     width: 100%;
+}
+
+.fa-battery-full, .fa-wifi{
+    float: right;
 }
 
 .bottom-navigation-bar{
