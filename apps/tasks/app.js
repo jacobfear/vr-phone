@@ -60,5 +60,15 @@ addForm.addEventListener("submit", e => {
     }  
 });
 
+/*bottom nav bar controls*/
+
 //go back to home page
 backBtn.addEventListener("click", () => window.location.href="../../index.html");
+
+//refresh page
+const navCircle = document.querySelector(".fa-circle-o");
+
+navCircle.addEventListener("click", function(){
+    let res = confirm("Are you sure you want to refresh your app?")
+    if (res==true){ location.reload() } 
+});
