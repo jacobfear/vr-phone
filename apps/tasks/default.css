@@ -1,0 +1,79 @@
+body{
+    background-color: #ff8408;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.container{
+    max-width: 80%;
+    max-height: auto;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: #bbb !important;
+}
+
+input[type=text],
+input[type=text]:focus{
+    color: #ffffff;
+    border: none;
+    background: rgba(0,0,0,0.2);
+    max-width: 80vw;
+    font-size: 1em;
+}
+
+.todos li{
+    background: #a79bc6;
+    cursor: default;
+}
+
+.todos li:hover{
+    opacity: .8;
+}
+
+.delete{
+    cursor: pointer;
+}
+
+.hide{
+    display: none !important;
+}
+
+.strikethrough{
+    text-decoration: line-through;
+    color:#bdbdbd;
+    opacity: .7;
+}
+
+/*Botton nav*/
+.bottom-navigation-bar{
+    background-color: #a79bc6;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    width: 100%;
+    opacity: .5;
+    transition: opacity 1s;
+}
+
+.bottom-navigation-bar:hover{
+    opacity: 1;
+}
+
+.bottom-nav-ico:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+
+.fa{
+    margin: .5em;
+    display: inline-block;
+}
+
+.app-title{
+    display: inline-block;
+}
+
