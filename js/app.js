@@ -57,3 +57,11 @@ popup.addEventListener("click", function(){
     popup.style.display = "none";
 });
 
+//bottom nav bar
+const navCircle = document.querySelector(".fa-circle-o");
+
+navCircle.addEventListener("click", function(){
+    let res = confirm("Are you sure you want to refresh your app?")
+    if (res==true){ location.reload() } 
+});
+
