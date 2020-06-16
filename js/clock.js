@@ -7,7 +7,7 @@ const checkTime = i => {
   
 const startTime = () => {
     let today = new Date();
-    let h = today.getHours();
+    let h = today.getHours() % 12;
     let m = today.getMinutes();
     // add a zero in front of numbers<10
     m = checkTime(m);
