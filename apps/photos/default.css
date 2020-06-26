@@ -1,0 +1,122 @@
+/*https://dev.to/gkhan205/create-content-loader-animation-like-facebook-linkedin-with-only-html-css-na7*/
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{background-color: #000; margin: 0; height: 100%; width: 100%;}
+
+.container{
+   font-family: 'Anton', sans-serif;
+   font-size: 2em;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   background: url(https://picsum.photos/550/300?random=1);
+   background-attachment: fixed;
+   background-position: center center;
+   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background-size: cover;
+   margin: 2em auto;
+   width: 100vw;
+   height: 100vh;
+}
+
+.highlight{
+  background-color: #000;
+  opacity: .6;
+  animation-name: swing;
+  animation-duration: 2.5s;
+}
+
+.quote{
+  padding: 0 .5em;
+  color: #fff;
+}
+
+.generate{
+  margin: 2em;
+}
+
+.generate {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #434343;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+.generate:hover {
+  background: #ed3330;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+  box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+  transition: all 0.4s ease 0s;
+}
+
+/*animations*/
+
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.swing {
+  transform-origin: top center;
+  animation-name: swing;
+}
+
+/*Botton nav*/
+.bottom-navigation-bar{
+  background-color: #a79bc6;
+  color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  width: 100%;
+  opacity: .5;
+  transition: opacity 1s;
+}
+
+.bottom-navigation-bar:hover{
+  opacity: 1;
+}
+
+.bottom-nav-ico:hover{
+  opacity: .5;
+  cursor: pointer;
+}
+
+.fa{
+  margin: .5em;
+  display: inline-block;
+}
